@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <h1>Workout List</h1>
+
+  <!-- Form for Adding a New Workout -->
+  <div class="mt-4">
+    <h3>Add New Workout</h3>
+    <form (ngSubmit)="onWorkoutAdded()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newWorkout.name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="type" class="form-label">Workout Type</label>
+        <input type="text" class="form-control" id="type" [(ngModel)]="newWorkout.type" name="type" required>
+      </div>
+      <div class="mb-3">
+        <label for="minutes" class="form-label">Minutes</label>
+        <input type="number" class="form-control" id="minutes" [(ngModel)]="newWorkout.minutes" name="minutes" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Workout</button>
+    </form>
+  </div>
+
+  <!-- Table for Displaying Workouts -->
+  <table class="table table-bordered mt-3" style="width: 70%; margin: 0 auto;">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Workout Type</th>
+        <th>Minutes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Iterate through the userData array -->
+      <tr *ngFor="let user of userData">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <!-- Loop through each workout of the user -->
+        <ng-container *ngFor="let workout of user.workouts">
+          <td>{{ workout.type }}</td>
+          <td>{{ workout.minutes }}</td>
+        </ng-container>
+      </tr>
+    </tbody>
+  </table>
+</div>

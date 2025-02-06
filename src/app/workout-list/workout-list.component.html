@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Workout List</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Workout Type</th>
+          <th>Minutes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of workouts">
+          <td>{{ user.name }}</td>
+          <td>
+            <ul>
+              <li *ngFor="let workout of user.workouts">
+                {{ workout.type }} - {{ workout.minutes }} minutes
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

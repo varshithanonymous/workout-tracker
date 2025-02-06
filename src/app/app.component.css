@@ -1,0 +1,12 @@
+.container {
+    max-width: 900px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

@@ -1,0 +1,113 @@
+/* Center the table and make it occupy 70% width */
+.table-container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table td {
+    background-color: #f8f9fa;
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #d6d8db;
+  }
+  
+  /* Table responsiveness */
+  @media (max-width: 768px) {
+    .table-container {
+      width: 90%;
+    }
+  }
+  
+  /* Header Styling */
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Styling */
+  button.btn {
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  button.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button.btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  button.btn-success {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  button.btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Inputs and Select styling */
+  input.form-control,
+  select.form-control {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 45px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input.form-control:focus,
+  select.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Form container for add-workout form */
+  .container {
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  

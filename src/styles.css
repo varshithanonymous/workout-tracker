@@ -1,0 +1,25 @@
+/* Background color for the page */
+body {
+    background-color: #f4f7fc;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Add a smooth transition effect to all elements */
+  * {
+    transition: all 0.3s ease;
+  }
+  
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
