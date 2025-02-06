@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-add-workout',
-  templateUrl: './add-workout.component.html',
-  styleUrls: ['./add-workout.component.css']
+    selector: 'app-add-workout',
+    templateUrl: './add-workout.component.html',
+    styleUrls: ['./add-workout.component.css'],
+    standalone: false
 })
 export class AddWorkoutComponent {
   @Output() workoutAdded = new EventEmitter<any>();
